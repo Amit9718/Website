@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Das - CV</title>
+    <style>
+        @page {
+            margin: 0.5in;
+            size: A4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+        }
+        
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: white;
+            padding: 30px;
+            border-bottom: 3px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        .header .title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            text-align: right;
+            margin-top: -60px;
+        }
+        
+        .contact-info div {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .contact-info .email {
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            display: flex;
+            min-height: calc(100vh - 150px);
+        }
+        
+        .left-column {
+            background: #000;
+            color: white;
+            width: 35%;
+            padding: 30px 20px;
+        }
+        
+        .right-column {
+            width: 65%;
+            padding: 30px;
+            background: white;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .left-column .section-title {
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        
+        .right-column .section-title {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .about-item {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .about-item strong {
+            display: inline-block;
+            width: 80px;
+        }
+        
+        .skills ul, .languages ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skills li, .languages li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .skills li:before, .languages li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: white;
+        }
+        
+        .certifications li {
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+        
+        .education-item, .project-item {
+            margin-bottom: 15px;
+        }
+        
+        .education-item h4, .project-item h4 {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        
+        .education-item .details, .project-item .details {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .career-objective {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .projects ol {
+            padding-left: 20px;
+        }
+        
+        .projects li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        .interests ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .interests li {
+            margin-bottom: 5px;
+            font-size: 14px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .interests li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .cv-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="header">
+            <h1>AMIT DAS</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact-info">
+                <div class="email">amit05das2004@gmail.com</div>
+                <div>+91 8927413065</div>
+                <div>Kakhuria, Purba Medinipur, Pin-721 444</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-column">
+                <div class="section">
+                    <div class="section-title">About Me</div>
+                    <div class="about-item"><strong>Date of Birth:</strong> May 05, 2004</div>
+                    <div class="about-item"><strong>Age:</strong> 20</div>
+                    <div class="about-item"><strong>Gender:</strong> Male</div>
+                    <div class="about-item"><strong>Address:</strong> Kakhuria, Purba Medinipur, PIN - 721444</div>
+                </div>
+                
+                <div class="section skills">
+                    <div class="section-title">Skills</div>
+                    <ul>
+                        <li>Attentive Listening and Effective Oral Communication Skills</li>
+                        <li>Programming: C, C++, Python, HTML, CSS, JavaScript</li>
+                        <li>Library: React JS</li>
+                        <li>Framework: Bootstrap, Tailwind CSS</li>
+                        <li>Great Problem Solving Ability to Quickly Create and Apply Ideas and Solutions</li>
+                        <li>Good Leadership Skills</li>
+                        <li>Creative Thinker</li>
+                    </ul>
+                </div>
+                
+                <div class="section certifications">
+                    <div class="section-title">Certifications</div>
+                    <ul>
+                        <li>Great Learning Certified Frontend Developer-HTML-CSS-JavaScript<br>September 2023</li>
+                        <li>The Digital Adda Certified Frontend Developer-HTML-CSS-JavaScript<br>September 2024</li>
+                        <li>Girlscript Summer of Code<br>October 2024</li>
+                        <li>Let's Upgrade Certified Dsa with C++ Bootcamp<br>January 2025</li>
+                    </ul>
+                </div>
+                
+                <div class="section languages">
+                    <div class="section-title">Languages</div>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Bengali</li>
+                        <li>Spanish (Learning)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <div class="section">
+                    <div class="section-title">Career Objective</div>
+                    <div class="career-objective">
+                        A Full Stack Developer graduate seeking an opportunity to work in a dynamic and challenging environment that fosters continuous learning and skill development. Passionate about designing and implementing innovative web and application solutions, while contributing to the success of the team and the organization. Motivated to improve personal skills in modern frameworks and technologies, while helping the organization achieve its goals in the software development industry.
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">Academic Background</div>
+                    <div class="education-item">
+                        <h4>Sister Nivedita University</h4>
+                        <div class="details">Bachelor Degree in Computer Science 2023 – Ongoing</div>
+                    </div>
+                    <div class="education-item">
+                        <h4>Nachinda J.K. High School</h4>
+                        <div class="details">W.B.C.H.S.E. : 87%</div>
+                        <div class="details">2020 – 2022</div>
+                    </div>
+                    <div class="education-item">
+                        <h4>Dhandara Jnanendra Vidyapith</h4>
+                        <div class="details">W.B.B.S.E. : 76.14%</div>
+                        <div class="details">2014 – 2020</div>
+                    </div>
+                </div>
+                
+                <div class="section projects">
+                    <div class="section-title">Projects</div>
+                    <ol>
+                        <li>SPOTIFY CLONE</li>
+                        <li>NETFLIX CLONE</li>
+                        <li>SNAKE GAME</li>
+                        <li>QUIZ PROJECT</li>
+                        <li>SQUARE GAME</li>
+                        <li>PERFUME E-COMMERCE WEBSITE</li>
+                        <li>PORTFOLIO WEBSITE</li>
+                        <li>POKEMON CARDS</li>
+                    </ol>
+                </div>
+                
+                <div class="section interests">
+                    <div class="section-title">Interests</div>
+                    <ul>
+                        <li>Learning about new technologies</li>
+                        <li>Exploring various websites for creative ideas</li>
+                        <li>Listening Music</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
